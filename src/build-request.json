@@ -1,0 +1,71 @@
+{
+  "kind": "build_request",
+  "title": "Fix deployment errors",
+  "projectName": "ILF Home",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Diagnose and resolve all deployment errors preventing the application from successfully building and deploying to the Internet Computer network",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Correct deployment errors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Application builds without compilation errors",
+        "Application deploys successfully to the Internet Computer",
+        "All canisters are operational after deployment",
+        "Frontend can successfully connect to backend canister"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Validate that all Motoko backend code follows single-actor architecture with proper type definitions and no syntax errors",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend main.mo compiles successfully",
+        "All public methods have correct type signatures",
+        "No orphaned or malformed function definitions"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Ensure all frontend imports and component references are valid with no missing dependencies or circular imports",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Frontend builds without TypeScript errors",
+        "All React components render without runtime errors",
+        "No missing or incorrect import paths"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain single-actor backend architecture",
+    "Do not modify immutable frontend paths (useInternetIdentity, useActor, main.tsx, components/ui)",
+    "Preserve all existing feature functionality"
+  ],
+  "nonGoals": [
+    "Adding new features or functionality",
+    "Changing the visual design or styling",
+    "Modifying existing feature behavior"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Website for an ILF home serving homeless individuals, lower income families, people re-entering from jail, and aged-out teens",
+  "architectural_notes": [
+    "Target audience: homeless individuals, lower income families, people re-entering from jail, aged-out teens"
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-that-clearly-communicates-ilf-home-s-mission-to-serve-homeless-individuals-lower-income-families-people-re-entering-from-jail-and-aged-out-teens",
+      "title": "Create a homepage that clearly communicates ILF Home's mission to serve homeless individuals, lower income families, people re-entering from jail, and aged-out teens",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-section-explaining-ilf-home-s-purpose-values-and-approach-to-supporting-vulnerable-populations",
+      "title": "Create an 'About Us' section explaining ILF Home's purpose, values, and approach to supporting vulnerable populations",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-or-programs-section-detailing-specific-support-offerings-for-each-target-population-homeless-lower-income-families-jail-re-entry-aged-out-teens",
+      "title": "Create a 'Services' or 'Programs' section detailing specific support offerings for each target population (homeless, lower income families, jail re-entry, aged-out teens)",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-get-help-or-apply-section-with-information-on-how-individuals-can-access-ilf-home-services-and-eligibility-requirements",
+      "title": "Create a 'Get Help' or 'Apply' section with information on how individuals can access ILF Home services and eligibility requirements",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-get-involved-or-support-us-section-with-ways-for-community-members-to-donate-volunteer-or-partner-with-ilf-home",
+      "title": "Create a 'Get Involved' or 'Support Us' section with ways for community members to donate, volunteer, or partner with ILF Home",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-us-section-with-phone-number-email-physical-address-and-a-contact-form",
+      "title": "Create a 'Contact Us' section with phone number, email, physical address, and a contact form",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-compassionate-and-professional-visual-design-theme-with-earth-tones-or-warm-colors-avoiding-blue-and-purple-that-conveys-trust-hope-and-community-support-throughout-the-entire-website",
+      "title": "Apply a warm, compassionate, and professional visual design theme with earth tones or warm colors (avoiding blue and purple) that conveys trust, hope, and community support throughout the entire website",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-diagnose-and-resolve-all-deployment-errors-preventing-the-application-from-successfully-building-and-deploying-to-the-internet-computer-network",
+      "title": "Diagnose and resolve all deployment errors preventing the application from successfully building and deploying to the Internet Computer network",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-frontend-imports-and-component-references-are-valid-with-no-missing-dependencies-or-circular-imports",
+      "title": "Ensure all frontend imports and component references are valid with no missing dependencies or circular imports",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create website for ILF home targeting homeless, lower income families, jail re-entry, and aged-out teens",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement backend storage for contact form submissions with fields for name, email, phone number, message, and submission timestamp",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Validate that all Motoko backend code follows single-actor architecture with proper type definitions and no syntax errors",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "ILF Home Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
