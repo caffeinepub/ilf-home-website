@@ -45,10 +45,12 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-3 text-foreground">Contact Us</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Phone: (555) 123-4567</li>
-              <li>Email: info@ilfhome.org</li>
-              <li>Address: 123 Hope Street</li>
-              <li>City, State 12345</li>
+              <li>
+                Phone: <a href="tel:8133998071" className="hover:text-primary transition-colors">(813) 399-8071</a>
+              </li>
+              <li>
+                Email: <a href="mailto:camillia@myptcs.com" className="hover:text-primary transition-colors">camillia@myptcs.com</a>
+              </li>
             </ul>
           </div>
         </div>

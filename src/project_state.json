@@ -1,82 +1,56 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "Website for an ILF home serving homeless individuals, lower income families, people re-entering from jail, and aged-out teens",
-  "architectural_notes": [
-    "Target audience: homeless individuals, lower income families, people re-entering from jail, aged-out teens"
-  ],
+  "projectStateVersion": 3,
+  "summary": "ILF Home website with contact information updates",
+  "architectural_notes": [],
   "known_issues": [],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-create-a-homepage-that-clearly-communicates-ilf-home-s-mission-to-serve-homeless-individuals-lower-income-families-people-re-entering-from-jail-and-aged-out-teens",
-      "title": "Create a homepage that clearly communicates ILF Home's mission to serve homeless individuals, lower income families, people re-entering from jail, and aged-out teens",
+      "id": "feature-update-the-phone-number-to-8133998071-in-the-contactsection-component",
+      "title": "Update the phone number to 8133998071 in the ContactSection component",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-an-about-us-section-explaining-ilf-home-s-purpose-values-and-approach-to-supporting-vulnerable-populations",
-      "title": "Create an 'About Us' section explaining ILF Home's purpose, values, and approach to supporting vulnerable populations",
+      "id": "feature-update-the-email-address-to-camillia-myptcs-com-in-the-contactsection-component",
+      "title": "Update the email address to camillia@myptcs.com in the ContactSection component",
       "reqIds": [
         "REQ-2"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-services-or-programs-section-detailing-specific-support-offerings-for-each-target-population-homeless-lower-income-families-jail-re-entry-aged-out-teens",
-      "title": "Create a 'Services' or 'Programs' section detailing specific support offerings for each target population (homeless, lower income families, jail re-entry, aged-out teens)",
+      "id": "feature-remove-the-address-contact-card-from-the-contactsection-component",
+      "title": "Remove the address contact card from the ContactSection component",
       "reqIds": [
         "REQ-3"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-get-help-or-apply-section-with-information-on-how-individuals-can-access-ilf-home-services-and-eligibility-requirements",
-      "title": "Create a 'Get Help' or 'Apply' section with information on how individuals can access ILF Home services and eligibility requirements",
+      "id": "feature-update-the-phone-number-to-8133998071-in-the-footer-component",
+      "title": "Update the phone number to 8133998071 in the Footer component",
       "reqIds": [
         "REQ-4"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-get-involved-or-support-us-section-with-ways-for-community-members-to-donate-volunteer-or-partner-with-ilf-home",
-      "title": "Create a 'Get Involved' or 'Support Us' section with ways for community members to donate, volunteer, or partner with ILF Home",
+      "id": "feature-update-the-email-address-to-camillia-myptcs-com-in-the-footer-component",
+      "title": "Update the email address to camillia@myptcs.com in the Footer component",
       "reqIds": [
         "REQ-5"
       ],
       "version": 1
     },
     {
-      "id": "feature-create-a-contact-us-section-with-phone-number-email-physical-address-and-a-contact-form",
-      "title": "Create a 'Contact Us' section with phone number, email, physical address, and a contact form",
+      "id": "feature-remove-the-address-from-the-footer-component",
+      "title": "Remove the address from the Footer component",
       "reqIds": [
         "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-apply-a-warm-compassionate-and-professional-visual-design-theme-with-earth-tones-or-warm-colors-avoiding-blue-and-purple-that-conveys-trust-hope-and-community-support-throughout-the-entire-website",
-      "title": "Apply a warm, compassionate, and professional visual design theme with earth tones or warm colors (avoiding blue and purple) that conveys trust, hope, and community support throughout the entire website",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-diagnose-and-resolve-all-deployment-errors-preventing-the-application-from-successfully-building-and-deploying-to-the-internet-computer-network",
-      "title": "Diagnose and resolve all deployment errors preventing the application from successfully building and deploying to the Internet Computer network",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-ensure-all-frontend-imports-and-component-references-are-valid-with-no-missing-dependencies-or-circular-imports",
-      "title": "Ensure all frontend imports and component references are valid with no missing dependencies or circular imports",
-      "reqIds": [
-        "REQ-11"
       ],
       "version": 1
     }
@@ -84,29 +58,24 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Create website for ILF home targeting homeless, lower income families, jail re-entry, and aged-out teens",
+      "summary": "Update phone number to 8133998071",
       "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-8",
-      "summary": "Implement backend storage for contact form submissions with fields for name, email, phone number, message, and submission timestamp",
-      "reqIds": [
-        "REQ-7"
-      ],
+      "id": "AR-2",
+      "summary": "Update email to camillia@myptcs.com",
+      "reqIds": [],
       "status": "pending"
     },
     {
-      "id": "AR-10",
-      "summary": "Validate that all Motoko backend code follows single-actor architecture with proper type definitions and no syntax errors",
-      "reqIds": [
-        "REQ-10"
-      ],
+      "id": "AR-3",
+      "summary": "Remove address from website",
+      "reqIds": [],
       "status": "pending"
     }
   ],
-  "gameProjectType": "none",
-  "projectName": "ILF Home Website",
+  "projectName": "ILF Home",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

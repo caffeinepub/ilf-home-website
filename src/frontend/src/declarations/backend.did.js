@@ -8,24 +8,10 @@
 
 import { IDL } from '@icp-sdk/core/candid';
 
-export const Greeting = IDL.Record({ 'message' : IDL.Text });
-
-export const idlService = IDL.Service({
-  'concatenateMessage' : IDL.Func([IDL.Text, IDL.Text], [Greeting], []),
-  'double' : IDL.Func([IDL.Nat], [IDL.Nat], []),
-  'getGreeting' : IDL.Func([Greeting], [IDL.Text], []),
-});
+export const idlService = IDL.Service({});
 
 export const idlInitArgs = [];
 
-export const idlFactory = ({ IDL }) => {
-  const Greeting = IDL.Record({ 'message' : IDL.Text });
-  
-  return IDL.Service({
-    'concatenateMessage' : IDL.Func([IDL.Text, IDL.Text], [Greeting], []),
-    'double' : IDL.Func([IDL.Nat], [IDL.Nat], []),
-    'getGreeting' : IDL.Func([Greeting], [IDL.Text], []),
-  });
-};
+export const idlFactory = ({ IDL }) => { return IDL.Service({}); };
 
 export const init = ({ IDL }) => { return []; };

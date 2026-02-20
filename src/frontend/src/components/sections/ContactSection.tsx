@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export default function ContactSection() {
@@ -62,7 +62,9 @@ export default function ContactSection() {
                   Phone
                 </CardTitle>
                 <CardDescription className="text-base">
-                  (555) 123-4567
+                  <a href="tel:8133998071" className="hover:text-primary transition-colors">
+                    (813) 399-8071
+                  </a>
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -74,20 +76,9 @@ export default function ContactSection() {
                   Email
                 </CardTitle>
                 <CardDescription className="text-base">
-                  info@ilfhome.org
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  Address
-                </CardTitle>
-                <CardDescription className="text-base">
-                  123 Hope Street<br />
-                  City, State 12345
+                  <a href="mailto:camillia@myptcs.com" className="hover:text-primary transition-colors">
+                    camillia@myptcs.com
+                  </a>
                 </CardDescription>
               </CardHeader>
             </Card>

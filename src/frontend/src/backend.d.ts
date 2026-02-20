@@ -7,11 +7,5 @@ export interface None {
     __kind__: "None";
 }
 export type Option<T> = Some<T> | None;
-export interface Greeting {
-    message: string;
-}
 export interface backendInterface {
-    concatenateMessage(message: string, sender: string): Promise<Greeting>;
-    double_(x: bigint): Promise<bigint>;
-    getGreeting(greeting: Greeting): Promise<string>;
 }

@@ -6,10 +6,10 @@
   "frontend/src/pages/SupportPage.tsx": "Comprehensive support services page covering employment, education, case management, and crisis intervention with population-specific program details.",
   "frontend/src/pages/VolunteerPage.tsx": "Get involved page presenting volunteer opportunities, donation options, corporate partnerships, and impact statistics to encourage community support.",
   "frontend/src/components/layout/Header.tsx": "Responsive header component with logo, desktop navigation menu, and mobile sheet menu using TanStack Router for navigation with active route highlighting.",
-  "frontend/src/components/layout/Footer.tsx": "Footer component with organization info, quick links, contact details, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/layout/Footer.tsx": "Footer component with organization info, quick links, contact details (phone (813) 399-8071 and email camillia@myptcs.com, address removed), and Caffeine.ai attribution with UTM tracking.",
   "frontend/src/components/sections/HeroSection.tsx": "Hero section component with headline, description, CTA buttons, and hero image for the homepage.",
-  "frontend/src/components/sections/ContactSection.tsx": "Contact section with contact information cards and a functional contact form using toast notifications for user feedback.",
-  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend interactions including getGreeting and double functions using the actor from useActor hook.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section with phone (813) 399-8071 and email camillia@myptcs.com contact cards (address removed), plus a functional contact form using toast notifications for user feedback.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks file for backend interactions, currently empty as the backend has no methods defined, with example structure commented for future use.",
   "frontend/src/hooks/use-toast.ts": "Custom toast notification hook implementation for displaying temporary user feedback messages throughout the application.",
   "frontend/src/index.css": "Global styles with OKLCH color system using warm earth tones (terracotta, sage, amber) for both light and dark modes, avoiding blue and purple as specified.",
   "frontend/tailwind.config.js": "Tailwind configuration with warm color palette, Inter font family, custom border radius, and extended theme tokens matching the design system."

@@ -1,13 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Fix all deployment errors preventing the application from building and deploying to the Internet Computer network.
+**Goal:** Update contact information throughout the site by changing the phone number and email address, and removing the physical address.
 
 **Planned changes:**
-- Diagnose and resolve compilation errors in Motoko backend code
-- Fix TypeScript and import errors in the frontend
-- Validate single-actor architecture and type definitions
-- Ensure all component references and dependencies are correctly configured
-- Test successful deployment to Internet Computer with operational canisters
+- Update phone number to 8133998071 in ContactSection and Footer components
+- Update email address to camillia@myptcs.com in ContactSection and Footer components
+- Remove address display from ContactSection and Footer components
 
-**User-visible outcome:** The application successfully builds and deploys to the Internet Computer with a working frontend that can connect to the backend canister.
+**User-visible outcome:** Users will see the updated phone number (813) 399-8071 and email address camillia@myptcs.com in both the contact section and footer, with the physical address no longer displayed.

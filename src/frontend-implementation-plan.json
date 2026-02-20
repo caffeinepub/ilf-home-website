@@ -1,118 +1,96 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix deployment errors",
+  "title": "Update contact information: phone, email, and remove address",
   "requirements": [
     {
-      "id": "REQ-9",
-      "summary": "Diagnose and resolve all deployment errors preventing successful build and deployment to Internet Computer",
+      "id": "REQ-1",
+      "summary": "Update the phone number to 8133998071 in the ContactSection component",
       "acceptanceCriteria": [
-        "Application builds without compilation errors",
-        "Application deploys successfully to the Internet Computer",
-        "All canisters are operational after deployment",
-        "Frontend can successfully connect to backend canister"
+        "Phone number displays as 8133998071 in the contact section",
+        "Phone number is formatted appropriately (e.g., (813) 399-8071)",
+        "Phone link uses tel:8133998071 for clickable functionality"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/sections/ContactSection.tsx",
           "operation": "modify",
-          "description": "Review and fix any TypeScript errors, incorrect imports, or component reference issues that prevent compilation. Ensure all route definitions are valid and all imported components exist."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Verify all component imports are correct, fix any missing or incorrect paths, and ensure all referenced components (headers, footers, sections) are properly imported and used."
-        },
-        {
-          "path": "frontend/src/pages/CommunityPage.tsx",
-          "operation": "modify",
-          "description": "Fix any import errors or missing component references. Ensure the page structure is valid and all dependencies resolve correctly."
-        },
-        {
-          "path": "frontend/src/pages/HousingPage.tsx",
-          "operation": "modify",
-          "description": "Correct any TypeScript compilation errors, invalid imports, or component reference issues."
-        },
-        {
-          "path": "frontend/src/pages/SupportPage.tsx",
-          "operation": "modify",
-          "description": "Resolve any import path errors or missing dependencies that prevent the page from building successfully."
-        },
-        {
-          "path": "frontend/src/pages/VolunteerPage.tsx",
-          "operation": "modify",
-          "description": "Fix any compilation errors related to imports, component references, or TypeScript type issues."
-        },
-        {
-          "path": "frontend/src/components/layout/Header.tsx",
-          "operation": "modify",
-          "description": "Ensure all navigation links are correctly typed and all imported UI components resolve properly. Fix any TypeScript errors."
-        },
-        {
-          "path": "frontend/src/components/layout/Footer.tsx",
-          "operation": "modify",
-          "description": "Verify imports are correct and the component exports properly. Resolve any compilation issues."
+          "description": "Update the phone number contact card to display 8133998071 with appropriate formatting (813) 399-8071 and ensure the tel: link uses tel:8133998071 for clickable functionality"
         }
       ]
     },
     {
-      "id": "REQ-11",
-      "summary": "Ensure all frontend imports and component references are valid with no missing dependencies or circular imports",
+      "id": "REQ-2",
+      "summary": "Update the email address to camillia@myptcs.com in the ContactSection component",
       "acceptanceCriteria": [
-        "Frontend builds without TypeScript errors",
-        "All React components render without runtime errors",
-        "No missing or incorrect import paths"
+        "Email displays as camillia@myptcs.com in the contact section",
+        "Email link uses mailto:camillia@myptcs.com for clickable functionality"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/sections/ContactSection.tsx",
           "operation": "modify",
-          "description": "Audit all import statements for correct paths and valid module references. Ensure react-router-dom imports match installed version. Verify all page components exist at their import paths."
-        },
+          "description": "Update the email contact card to display camillia@myptcs.com and ensure the mailto: link uses mailto:camillia@myptcs.com for clickable functionality"
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Remove the address contact card from the ContactSection component",
+      "acceptanceCriteria": [
+        "Address contact card is no longer displayed in the contact section",
+        "Remaining contact cards (phone and email) are properly spaced and styled"
+      ],
+      "file_operations": [
         {
-          "path": "frontend/src/pages/HomePage.tsx",
+          "path": "frontend/src/components/sections/ContactSection.tsx",
           "operation": "modify",
-          "description": "Validate all import paths for components, verify component exports match imports, and ensure no circular dependency chains exist. Fix relative path inconsistencies."
-        },
-        {
-          "path": "frontend/src/pages/CommunityPage.tsx",
-          "operation": "modify",
-          "description": "Check and correct all import statements, ensure referenced components exist and are properly exported, and validate TypeScript types are correctly imported."
-        },
-        {
-          "path": "frontend/src/pages/HousingPage.tsx",
-          "operation": "modify",
-          "description": "Review all imports for accuracy, fix any incorrect relative paths, and ensure all UI components are imported from correct shadcn/ui paths."
-        },
-        {
-          "path": "frontend/src/pages/SupportPage.tsx",
-          "operation": "modify",
-          "description": "Validate import paths are correct, verify all imported dependencies are declared in package.json, and fix any missing or malformed imports."
-        },
-        {
-          "path": "frontend/src/pages/VolunteerPage.tsx",
-          "operation": "modify",
-          "description": "Ensure all imports resolve to existing files, fix any incorrect paths to shared components or utilities, and validate no circular import chains."
-        },
-        {
-          "path": "frontend/src/components/layout/Header.tsx",
-          "operation": "modify",
-          "description": "Verify all import statements are syntactically correct, check that imported components are properly exported, and ensure react-router-dom Link component is correctly imported."
-        },
+          "description": "Remove the address contact card from the contact information display while maintaining proper spacing and styling for the remaining phone and email cards"
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Update the phone number to 8133998071 in the Footer component",
+      "acceptanceCriteria": [
+        "Phone number in footer displays as 8133998071",
+        "Phone link in footer uses tel:8133998071"
+      ],
+      "file_operations": [
         {
           "path": "frontend/src/components/layout/Footer.tsx",
           "operation": "modify",
-          "description": "Validate all imports exist and are correctly typed, ensure the component is properly exported for use in other files, and fix any TypeScript import errors."
-        },
+          "description": "Update the phone number in the footer contact details to display 8133998071 and ensure the tel: link uses tel:8133998071 for clickable functionality"
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Update the email address to camillia@myptcs.com in the Footer component",
+      "acceptanceCriteria": [
+        "Email in footer displays as camillia@myptcs.com",
+        "Email link in footer uses mailto:camillia@myptcs.com"
+      ],
+      "file_operations": [
         {
-          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "path": "frontend/src/components/layout/Footer.tsx",
           "operation": "modify",
-          "description": "Check all imports including Button component from shadcn/ui, verify image asset paths are correct (frontend/public/assets/generated/hero-community.dim_1200x600.png), and ensure no missing dependencies."
-        },
+          "description": "Update the email address in the footer contact details to display camillia@myptcs.com and ensure the mailto: link uses mailto:camillia@myptcs.com for clickable functionality"
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Remove the address from the Footer component",
+      "acceptanceCriteria": [
+        "Address is no longer displayed in the footer",
+        "Footer layout remains visually balanced without the address"
+      ],
+      "file_operations": [
         {
-          "path": "frontend/src/components/sections/FeaturesSection.tsx",
+          "path": "frontend/src/components/layout/Footer.tsx",
           "operation": "modify",
-          "description": "Validate icon imports are correct, ensure Card component imports from proper shadcn/ui path, and verify image references (frontend/public/assets/generated/icon-*.dim_128x128.png files) are accurate."
+          "description": "Remove the address from the footer contact details while maintaining a visually balanced layout with the remaining phone and email information"
         }
       ]
     }

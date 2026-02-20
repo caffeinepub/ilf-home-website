@@ -89,58 +89,10 @@ export class ExternalBlob {
         return this;
     }
 }
-export interface Greeting {
-    message: string;
-}
 export interface backendInterface {
-    concatenateMessage(message: string, sender: string): Promise<Greeting>;
-    double_(x: bigint): Promise<bigint>;
-    getGreeting(greeting: Greeting): Promise<string>;
 }
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
-    async concatenateMessage(arg0: string, arg1: string): Promise<Greeting> {
-        if (this.processError) {
-            try {
-                const result = await this.actor.concatenateMessage(arg0, arg1);
-                return result;
-            } catch (e) {
-                this.processError(e);
-                throw new Error("unreachable");
-            }
-        } else {
-            const result = await this.actor.concatenateMessage(arg0, arg1);
-            return result;
-        }
-    }
-    async double_(arg0: bigint): Promise<bigint> {
-        if (this.processError) {
-            try {
-                const result = await this.actor.double(arg0);
-                return result;
-            } catch (e) {
-                this.processError(e);
-                throw new Error("unreachable");
-            }
-        } else {
-            const result = await this.actor.double(arg0);
-            return result;
-        }
-    }
-    async getGreeting(arg0: Greeting): Promise<string> {
-        if (this.processError) {
-            try {
-                const result = await this.actor.getGreeting(arg0);
-                return result;
-            } catch (e) {
-                this.processError(e);
-                throw new Error("unreachable");
-            }
-        } else {
-            const result = await this.actor.getGreeting(arg0);
-            return result;
-        }
-    }
 }
 export interface CreateActorOptions {
     agent?: Agent;

@@ -1,28 +1,20 @@
 import { useQuery } from '@tanstack/react-query';
 import { useActor } from './useActor';
 
-export function useGetGreeting(message: string) {
-  const { actor, isFetching } = useActor();
+// This file contains React Query hooks for backend interactions.
+// Currently, the backend has no methods, so no hooks are defined.
+// Add custom hooks here as backend functionality is implemented.
 
-  return useQuery({
-    queryKey: ['greeting', message],
-    queryFn: async () => {
-      if (!actor) return '';
-      return actor.getGreeting({ message });
-    },
-    enabled: !!actor && !isFetching && !!message,
-  });
-}
-
-export function useDouble(x: bigint) {
-  const { actor, isFetching } = useActor();
-
-  return useQuery({
-    queryKey: ['double', x.toString()],
-    queryFn: async () => {
-      if (!actor) return BigInt(0);
-      return actor.double_(x);
-    },
-    enabled: !!actor && !isFetching,
-  });
-}
+// Example hook structure:
+// export function useGetData() {
+//   const { actor, isFetching } = useActor();
+//
+//   return useQuery({
+//     queryKey: ['data'],
+//     queryFn: async () => {
+//       if (!actor) return [];
+//       return actor.getData();
+//     },
+//     enabled: !!actor && !isFetching,
+//   });
+// }

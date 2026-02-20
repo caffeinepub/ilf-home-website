@@ -1,68 +1,121 @@
 {
   "kind": "build_request",
-  "title": "Fix deployment errors",
-  "projectName": "ILF Home",
-  "priority": "high",
+  "title": "Update contact information: phone, email, and remove address",
+  "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-9",
-      "text": "Diagnose and resolve all deployment errors preventing the application from successfully building and deploying to the Internet Computer network",
-      "target": "both",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ],
-        "quotes": [
-          "Correct deployment errors"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Application builds without compilation errors",
-        "Application deploys successfully to the Internet Computer",
-        "All canisters are operational after deployment",
-        "Frontend can successfully connect to backend canister"
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Validate that all Motoko backend code follows single-actor architecture with proper type definitions and no syntax errors",
-      "target": "backend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Backend main.mo compiles successfully",
-        "All public methods have correct type signatures",
-        "No orphaned or malformed function definitions"
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "text": "Ensure all frontend imports and component references are valid with no missing dependencies or circular imports",
+      "id": "REQ-1",
+      "text": "Update the phone number to 8133998071 in the ContactSection component",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-5"
+        ],
+        "quotes": [
+          "I need to update the phone number to 8133998071"
         ]
       },
       "acceptanceCriteria": [
-        "Frontend builds without TypeScript errors",
-        "All React components render without runtime errors",
-        "No missing or incorrect import paths"
+        "Phone number displays as 8133998071 in the contact section",
+        "Phone number is formatted appropriately (e.g., (813) 399-8071)",
+        "Phone link uses tel:8133998071 for clickable functionality"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update the email address to camillia@myptcs.com in the ContactSection component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "email to camillia@myptcs.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Email displays as camillia@myptcs.com in the contact section",
+        "Email link uses mailto:camillia@myptcs.com for clickable functionality"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Remove the address contact card from the ContactSection component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "to take off the address for now"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Address contact card is no longer displayed in the contact section",
+        "Remaining contact cards (phone and email) are properly spaced and styled"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Update the phone number to 8133998071 in the Footer component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "I need to update the phone number to 8133998071"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Phone number in footer displays as 8133998071",
+        "Phone link in footer uses tel:8133998071"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Update the email address to camillia@myptcs.com in the Footer component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "email to camillia@myptcs.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Email in footer displays as camillia@myptcs.com",
+        "Email link in footer uses mailto:camillia@myptcs.com"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Remove the address from the Footer component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "to take off the address for now"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Address is no longer displayed in the footer",
+        "Footer layout remains visually balanced without the address"
       ]
     }
   ],
   "constraints": [
-    "Maintain single-actor backend architecture",
-    "Do not modify immutable frontend paths (useInternetIdentity, useActor, main.tsx, components/ui)",
-    "Preserve all existing feature functionality"
+    "Do not modify the backend files",
+    "Maintain existing component structure and styling patterns",
+    "Preserve all other contact section and footer functionality"
   ],
   "nonGoals": [
-    "Adding new features or functionality",
-    "Changing the visual design or styling",
-    "Modifying existing feature behavior"
+    "Adding new contact methods",
+    "Changing the layout or design of contact components beyond removing the address",
+    "Modifying other pages or components"
   ],
   "imageRequirements": {
     "required": [],
